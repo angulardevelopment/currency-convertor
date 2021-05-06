@@ -1,0 +1,117 @@
+
+  <div class="example-full-width">US Dollar (USD)
+    <input  type="text" name="dollar" (ngModelChange)="dollarChanged($event)"
+       [(ngModel)]="dollar">
+  </div>
+  <div class="example-full-width">Euro (EUR)
+    <input  type="text" name="euro" (ngModelChange)="euroChanged( $event)"
+       [(ngModel)]="euro">
+  </div>
+  <div class="example-full-width">Pound sterling (GBP)
+    <input  type="text" name="pond" (ngModelChange)="pondChanged( $event)"
+       [(ngModel)]="pound">
+  </div>
+  <div class="example-full-width">Japanese yen (JPY)
+    <input  type="text" name="hec" (ngModelChange)="yenChanged( $event)"
+       [(ngModel)]="japanYen">
+  </div>
+  <div class="example-full-width">Danish krone (DKK)
+    <input  type="text" name="krone" (ngModelChange)="kroneChanged( $event)"
+       [(ngModel)]="denKrone">
+  </div>
+  <div class="example-full-width">Bulgarian lev (BGN)
+    <input  type="text" name="len" (ngModelChange)="bulgChanged( $event)"
+       [(ngModel)]="levBulgria">
+  </div>
+
+  <div class="example-full-width">Hungarian forint (HUF)
+    <input  type="text" name="forint" (ngModelChange)="hungaryChanged( $event)"
+       [(ngModel)]="forintHungary">
+  </div>
+  <div class="example-full-width">Czech koruna (CZK)
+      <input  type="text" name="Czech" (ngModelChange)="czechChanged( $event)"
+         [(ngModel)]="czechRepublc">
+    </div>
+  <div class="example-full-width"> Polish zloty (PLN)
+    <input  type="text" name="poland" (ngModelChange)="polandChanged( $event)"
+       [(ngModel)]="poland">
+  </div>
+  <div class="example-full-width">Swedish krona (SEK)
+    <input  type="text" name="kronsym" (ngModelChange)="swedenChanged( $event)" placeholder=""
+       [(ngModel)]="swedan">
+  </div>
+  <div class="example-full-width"> Swiss franc (CHF)
+    <input  type="text" name="franc" (ngModelChange)="swissChanged( $event)" placeholder=""
+       [(ngModel)]="swiss">
+  </div>
+  <div class="example-full-width"> Icelandic krona (ISK)
+    <input  type="text" name="ice" (ngModelChange)="icelndChanged( $event)"
+       [(ngModel)]="icelnd">
+  </div>
+  <div class="example-full-width">  Norwegian krone (NOK)
+    <input  type="text" name="norwy" (ngModelChange)="norwayChanged( $event)"
+       [(ngModel)]="norway">
+  </div>
+  <div class="example-full-width">Australian dollar (AUD)
+    <input  type="text" name="aust" (ngModelChange)="ausChanged( $event)"
+       [(ngModel)]="australian">
+  </div>
+  <div class="example-full-width">Canadian dollar (CAD)
+    <input  type="text" name="canada" (ngModelChange)="conadaChanged( $event)"
+       [(ngModel)]="canada">
+  </div>
+  <div class="example-full-width">Hong Kong dollar (HKD)
+    <input  type="text" name="kong" (ngModelChange)="hongChanged( $event)"
+       [(ngModel)]="hongkong">
+  </div>
+
+  <div class="example-full-width">South Korean won (KRW)
+    <input  type="text" name="kor" (ngModelChange)="koreanChanged( $event)"
+       [(ngModel)]="korean">
+  </div>
+  <div class="example-full-width">New Zealand dollar (NZD)
+    <input  type="text" name="newzlnd" (ngModelChange)="newzlndChanged( $event)"
+       [(ngModel)]="newzlnd">
+  </div>
+  <div class="example-full-width">Singapore dollar (SGD)
+    <input  type="text" name="sing" (ngModelChange)="singChanged( $event)"
+       [(ngModel)]="singapore">
+  </div>
+  <div class="example-full-width">South African rand (ZAR)
+    <input  type="text" name="afri" (ngModelChange)="africnChanged( $event)"
+       [(ngModel)]="african">
+  </div>
+    <div class="example-full-width">Indian Rupee (INR)
+      <input  type="text" name="rupee" (ngModelChange)="INDChanged( $event)"
+         [(ngModel)]="indian">
+    </div>
+    <div class="example-full-width">Romanian Leu (RON)
+      <input  type="text" name="roman" (ngModelChange)="romaniaChanged( $event)"
+         [(ngModel)]="romaniac">
+    </div>
+    <div class="example-full-width"> Croatian Kuna(HRK)
+      <input  type="text" name="cro" (ngModelChange)="crotiaChanged( $event)"
+         [(ngModel)]="crotia">
+    </div>
+    <div class="example-full-width">Russian Ruble (RUB)
+      <input  type="text" name="russ" (ngModelChange)="russianChanged( $event)"
+         [(ngModel)]="russian">
+    </div>
+
+
+<div class="tbl">
+    <table id="customers">
+       <tr>
+         <th>name</th>
+         <th>symbol</th>
+         <th>Info</th>
+
+       </tr>
+       <tr *ngFor="let i of ELEMENT_DATA">
+         <td>{{i.name}}</td>
+         <td>{{i.symbol}}</td>
+         <td>{{i.desc}}</td>
+
+       </tr>
+     </table>
+   </div>

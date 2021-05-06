@@ -124,5 +124,8 @@
       }
     }
   },
-  "defaultProject": "currency-app"
+  "defaultProject": "currency-app",
+  "cli": {
+    "analytics": false
+  }
 }
