@@ -1,6 +1,8 @@
 # About
 
 currency conversion app
+In this project, we have used currency converter API to convert different currency.
+
 
 ## currency convertor
 * 1 Australian Dollar equals 51.85 Indian Rupee
