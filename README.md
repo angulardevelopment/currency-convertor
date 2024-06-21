@@ -27,6 +27,7 @@ currency conversion app we have used currency converter API to convert different
 * 1 Euro equals 77.47 Indian Rupee
 * 1 british pound is 84.20 rupee `1/100=Penny Plural=pounds `
 * 1 Philippine Piso is 1.31 Indian Rupee
+denominations Euro: €5, €10, €20, €50, €100, €200 and €500
 
 ### useful commands to run project
 - npm run start
