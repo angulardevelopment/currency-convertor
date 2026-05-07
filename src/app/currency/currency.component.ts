@@ -1,14 +1,19 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, inject } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { forkJoin, Observable } from 'rxjs';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-currency',
   templateUrl: './currency.component.html',
-  styleUrls: ['./currency.component.scss']
+  styleUrls: ['./currency.component.scss'],
+  standalone: true,
+  imports: [FormsModule]
 })
 
 export class CurrencyComponent implements OnInit {
+  private http = inject(HttpClient);
+
 
   public responseData1 = {USD_EUR: 0.819502};
   public responseData2 = {USD_GBP: 0.736494};
@@ -93,8 +98,6 @@ export class CurrencyComponent implements OnInit {
   russian;
   // url = 'https://free.currconv.com/api/v7/convert?q=USD_INR&compact=ultra&apiKey=4efbf155fbf9ab447a05';
   // http://free.currencyconverterapi.com/api/v5/convert?q=USD_EUR&compact=ultra
-
-  constructor(private http: HttpClient) { }
 
   public requestDataFromMultipleSources(): Observable<any[]> {
     const response1 = this.http.get('https://free.currconv.com/api/v7/convert?q=USD_EUR&compact=ultra&apiKey=4efbf155fbf9ab447a05');
